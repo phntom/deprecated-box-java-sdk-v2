@@ -14,7 +14,7 @@ public class BoxEventCollection extends BoxCollectionBase {
 
     /**
      * Copy constructor, this does deep copy for all the fields.
-     * 
+     *
      * @param obj
      */
     public BoxEventCollection(BoxEventCollection obj) {
@@ -23,7 +23,7 @@ public class BoxEventCollection extends BoxCollectionBase {
 
     /**
      * Instantiate the object from a map. Each entry in the map reflects to a field.
-     * 
+     *
      * @param map
      */
     public BoxEventCollection(Map<String, Object> map) {
@@ -51,8 +51,8 @@ public class BoxEventCollection extends BoxCollectionBase {
      * @return the next stream_position
      */
     @JsonProperty(FIELD_NEXT_STREAM_POSITION)
-    public Long getNextStreamPosition() {
-        return (Long) getValue(FIELD_NEXT_STREAM_POSITION);
+    public String getNextStreamPosition() {
+        return (String) getValue(FIELD_NEXT_STREAM_POSITION);
     }
 
     /**
@@ -60,7 +60,7 @@ public class BoxEventCollection extends BoxCollectionBase {
      *            the next stream position
      */
     @JsonProperty(FIELD_NEXT_STREAM_POSITION)
-    private void setNextStreamPosition(Long nextStreamPosition) {
+    private void setNextStreamPosition(String nextStreamPosition) {
         put(FIELD_NEXT_STREAM_POSITION, nextStreamPosition);
     }
 
